@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#header {
+  text-align: center;
+  background-color: rgb(172, 172, 172);
+  padding: 10px 0;
+  border: 2px solid black;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#header h1 {
+  display: inline-block;
+  text-align: center;
+}
+
+#search {
+  display: inline;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  top: 35%;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 15rem;
+  border-right: 1px dashed black;
+  position: fixed;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+  margin-top: 95px;
+}
+
+.sidenav a {
+  font-size: 25px;
+  display: block;
+  padding: 20px 0;
+  text-decoration: none;
+  color: rgb(28, 100, 255);
+}
+
+.sidenav a:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.sidenav .focus {
+  background-color: rgb(209, 209, 209);
+}
+
+.main {
+  padding-top: 95px;
+  margin-left: 15rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#questions-header {
+  margin:0;
+  padding: 30px;
+}
+
+#questions-header h2 {
+  display: inline-block;
+  margin-block: 0;
+}
+
+.btn-ask-q {
+  position: absolute;
+  right: 50px;
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(28, 100, 255);
+  padding: 10px;
+}
+.btn-ask-q:hover {
+  background-color: rgb(44, 111, 255);
+  cursor: pointer;
+}
+
+
+#questions-subheader {
+  margin: 0;
+  padding: 20px 30px 40px 30px;
+  font-size: 20px;
+  position: relative;
+  border-bottom: 1px dashed black;
+}
+
+#questions-subheader p {
+  display: inline-block;
+  margin-block: 0;
+}
+
+#questions-subheader div {
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  font-size: 0;
+}
+
+#questions-subheader button {
+  margin: 0;
+  padding: 5px 10px;
+  background-color: white;
+}
+#questions-subheader button:hover {
+  background-color: rgb(218, 218, 218);
+  cursor: pointer;
+}
+
+
+.question {
+  min-height: 100px;
+  border-bottom: 1px dashed black;
+  padding: 15px 15px 30px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question .col1 {
+  width: 15%;
+}
+.question .col2 {
+  width: 60%;
+  padding-right: 5%;
+}
+.question .col3 {
+  width: 20%;
+}
+.question p {
+  margin-block: 0;
+}
+.question a {
+  text-decoration: none;
+  color:rgb(28, 100, 255);
+  font-size: 20px;
+}
+.question a:hover {
+  color:rgb(101, 150, 255);
+}
+.question .question-tags {
+  margin-top: 15px;
+}
+.question .question-tags p {
+  display: inline;
+  border: 1px solid black;
+  border-radius: 15%;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.author {
+  display: inline;
+  color: rgb(201, 0, 0);
+}
+.askDate {
+  display: inline;
+}
+
+#registeruser {
+  margin-left: 15rem;
+  position: relative;
+  padding: 95px 30px 30px 30px;
+  display: none;
+}
+
+#login {
+  margin-left: 15rem;
+  position: relative;
+  padding: 95px 30px 30px 30px;
+  display: none;
+}
+
+
+#askquestion {
+  margin-left: 15rem;
+  position: relative;
+  padding: 95px 30px 30px 30px;
+  display: none;
+}
+#askquestion h2 {
+  margin-block-end: 10px;
+}
+#askquestion p {
+  margin-block: 0;
+}
+#askquestion input{
+  height: 40px;
+  width: 300px;
+}
+#askquestion textarea[name="q-text"] {
+  width: 300px;
+}
+#askquestion button {
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(28, 100, 255);
+  padding: 10px;
+  margin-top: 20px;
+  display: inline;
+}
+.text-for-mandatory {
+  color: red;
+  display: inline;
+  margin-left: 30px;
+}
+
+
+#alltags {
+  margin-left: 15rem;
+  position: relative;
+  padding: 95px 30px 30px 30px;
+  display: none;
+}
+
+#alltags h2 {
+  display: inline-block;
+  margin-block: 0;
+}
+
+#display-tags {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+#tags-header h2 {
+  margin-right: 30%;
+}
+#tags-header .btn-ask-q {
+  margin-top: 30px;
+}
+.tag {
+  width: 100%;
+}
+.tag-container {
+  display: inline-block;
+  width: 33%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.tag-data {
+  display: inline-block;
+  border: 1px dashed black;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+.tag-data a {
+  color: blue;
+}
+
+#noquestions {
+  padding: 30px;
+}
+
+#answer-page {
+  margin-left: 15rem;
+  position: relative;
+  padding-top: 135px;
+  margin-bottom: 20px;
+  display: none;
+}
+#answerpage-header {
+  display: flex;
+  padding: 0 30px;
+}
+#answer-page h2 {
+  display: inline-block;
+  margin-block: 0;
+  margin-right: 40px;
+}
+#answerpage-header-col {
+  width: 50%;
+}
+#answer-page .author {
+  display: block;
+}
+
+#question {
+  display: flex;
+  margin-top: 50px;
+  padding: 0 30px 20px 30px;
+}
+#question h2 {
+  width: 10%;
+  padding-top: 20px;
+}
+#question p:nth-of-type(1) {
+  width: 60%;
+  padding-right: 5%;
+}
+#question p:nth-of-type(2) {
+  width: 25%;
+  padding-top: 25px;
+}
+#question-comments {
+  padding-left: 30px;
+  padding-bottom: 20px;
+  flex-grow: 1;
+  border-bottom: 1px dashed black;
+}
+.ans {
+  display: flex;
+  padding: 30px;
+  border-bottom: 1px dashed black;
+}
+.ans p:nth-of-type(1) {
+  width: 70%;
+  padding-right: 5%;
+}
+.ans p:nth-of-type(2) {
+  width: 25%;
+}
+.ans .author {
+  color: green;
+}
+
+#btn-answer-q {
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(28, 100, 255);
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+#btn-answer-q:hover {
+  background-color: rgb(44, 111, 255);
+  cursor: pointer;
+}
+
+#answer-question {
+  margin-left: 15rem;
+  position: relative;
+  padding: 95px 30px 30px 30px;
+  display: none;
+}
+#answer-question h2 {
+  margin-block-end: 10px;
+}
+#answer-question p {
+  margin-block: 0;
+}
+#answer-question input{
+  height: 40px;
+  width: 300px;
+}
+#answer-question textarea[name="a-text"] {
+  width: 300px;
+}
+#answer-question button {
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(28, 100, 255);
+  padding: 10px;
+  margin-top: 20px;
+  display: inline;
+}
